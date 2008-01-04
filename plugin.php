@@ -11,8 +11,7 @@ function sitenotes_initialize()
 {
 	add_controllers('controllers');
 	add_theme_pages('admin', 'admin');
-//	add_navigation('Sitenotes', 'sitenotes', 'main');
-	add_navigation('Foobar','foobar','main');
+	add_navigation('Sitenotes', 'sitenotes', 'main');
 }
 
 function sitenotes_install()
