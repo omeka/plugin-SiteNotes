@@ -1,11 +1,6 @@
 <?php 
-class SiteNotes_IndexController extends Omeka_Controller_Action {	
-	
-	public function init()
-	{
-		
-	}
-	
+class SiteNotes_IndexController extends Omeka_Controller_Action 
+{	
 	public function indexAction() 
 	{		
 		
@@ -13,13 +8,10 @@ class SiteNotes_IndexController extends Omeka_Controller_Action {
 	
 	public function editAction() 
 	{
-		$site_notes_content = $_POST['site_notes_content'];
-		if(!empty($site_notes_content)) { 
-			set_option('site_notes_content', $_POST['site_notes_content']);	
-			$this->redirect->gotoUrl('site-notes');
-            
+		$siteNotesContent = $_POST['site_notes_content'];
+		if (!empty($siteNotesContent)) { 
+			set_option('site_notes_content', $siteNotesContent);	
+			$this->redirect->gotoUrl('site-notes');  
 		}
 	}
-	
 }
-?>
