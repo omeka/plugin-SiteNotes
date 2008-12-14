@@ -49,7 +49,7 @@ function site_notes_admin_theme_header($request)
 
 function site_notes_define_acl($acl)
 {
-	$acl->loadResourceList(array('SiteNotes_Index' => array('edit','foobar')));
+	$acl->loadResourceList(array('SiteNotes_Index' => array('edit')));
 }
 
 function site_notes_admin_navigation_main($nav)
