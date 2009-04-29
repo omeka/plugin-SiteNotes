@@ -1,6 +1,6 @@
 <?php 
 // Define constants
-define('SITE_NOTES_PLUGIN_VERSION', 1.0);
+define('SITE_NOTES_PLUGIN_VERSION', get_plugin_ini('SimpleNotes', 'version'));
 
 // Add plugin hooks
 add_plugin_hook('install', 'site_notes_install');
