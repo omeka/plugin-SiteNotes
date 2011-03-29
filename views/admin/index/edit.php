@@ -1,4 +1,10 @@
+<?php queue_js('tiny_mce/tiny_mce'); ?>
 <?php head(array('title' => 'Site Notes | Edit', 'body_class' => 'site-notes')); ?>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Omeka.wysiwyg();
+    });
+</script>
 <h1>Site Notes | Edit</h1>
 
 <div id="primary">
