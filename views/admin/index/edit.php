@@ -1,7 +1,7 @@
 <?php queue_js('tiny_mce/tiny_mce'); ?>
 <?php head(array('title' => 'Site Notes | Edit', 'body_class' => 'site-notes')); ?>
 <script type="text/javascript">
-    jQuery(document).ready(function() {
+    jQuery(window).load(function() {
         Omeka.wysiwyg();
     });
 </script>
